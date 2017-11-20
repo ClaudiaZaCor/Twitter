@@ -1,7 +1,3 @@
-#tweet-box {
-  resize: none;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -16,61 +12,119 @@ header {
   z-index: 1000;
   width: 100%;
   height: 50px;
-  background-color: rgb(44, 189, 179);
+  background-color: #fd6475;
   position: fixed;
   top: 0;
   left: 0;
 }
-.principal {
-  margin-top: 90px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
+
 header h1 {
   padding-top:0.5%; 
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  font-size: 25px;
+  color: blanchedalmond;
   text-align: center;
 }
-#principalSection {
+
+.box-left {
+  margin-top: 90px;
+  margin-left: 90px;
+  padding-left: 10%;
+  padding-right: 10%;
   float: left;
   background-color: aliceblue;
-  box-shadow: 2px 2px 2px gray;
+  box-shadow: 2px 2px 2px turquoise;
   width: 25%;
   padding: 10px;
   box-sizing: border-box;
   font-family: helvetica;
   border-radius: 20px;
 }
-#principalSection p{
-  font-size: 14px;
-  margin: 10px 0;
-}
-#principalSection h1{
-  color: lightcoral;
-  font-size: 18px;
-}
-#form {
-  background-color: aliceblue;
-  width: 25%;
-  height: 100px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px gray;
-  float:right;
-  padding: 10px;
-  overflow: auto;
-  margin-bottom: 50px;
+
+h2 {
+  padding-top:0.5%; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
 }
 
-#form textarea{
+.presentation {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+.text-uppercase{
+  color: lightcoral;
+  font-size: 18px;
+  margin: 50px 0px 0px 0px;
+}
+.form-right {
+  background-color: aliceblue;
+  width: 25%;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px turquoise;
+  float:right;
+  padding: 10px;
+  overflow: none;
+  margin-top: 100px;
+  margin-right: 200px;
+}
+
+#tweet-box{
   border: none;
   width: 100%;
   height: 50%;
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0px;
 }
-#form input{
+
+.line {
+  border-style: solid;
+  color: salmon;
+  margin-top: 10px;
+}
+
+#btn {
   border: none;
   padding: 6px;
   border-radius: 10px;
+  margin-top: 10px;
+  background-color: #fd6475;
+  color: white;
 }
+
+#container-tweets {
+  border: none;
+  border-radius: 10px;
+  margin-top: 300px;
+  margin-left: 300px;
+  background-color: aliceblue;
+  width: 50%;
+  position: absolute;
+}
+
+#container-tweets p {
+  background-color: #fff;
+  margin: 0 0 1.5% 0;
+  padding: 0.8%;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+

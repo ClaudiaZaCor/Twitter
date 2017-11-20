@@ -23,6 +23,7 @@ function validar(){
     btn.disabled=false;
   }
 }
+
 /*************VERSION 0.0.2****************/
 // Evento de click al boton v1
 btn.addEventListener('click', twittear);
@@ -31,14 +32,25 @@ textAreaPress.addEventListener('keyup',validar);
 validar();
 textAreaPress.addEventListener('keyup',countString);
 function countString(){
-
   var lengthText = 140 - (document.getElementById('tweet-box').value.length);
   document.getElementById('characters').textContent=lengthText;
-  
-
 }
 
-
-
+/*Ajusta la hora del Tweet*/ 
+function time() {
+	var date = new Date();
+	var hours = date.getHours();
+	var min = date.getMinutes();
+	var time;
+	if (min < 10) {
+		min = '0' + min;
+	}
+	if (hours >= 12 && hours <= 24) {
+		time = hours + ':' + min + ' PM';
+	} else {
+		time = hours + ':' + min + ' AM';
+	}
+	return time;
+}
 
 /****************VERSION 0.0.3***********************/
